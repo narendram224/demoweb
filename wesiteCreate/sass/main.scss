@@ -1,0 +1,55 @@
+/*ligt green:#7ed561
+dark :55c57a
+dark gren:#28b483*/
+@import "base/base";
+@import "abstracts/function";
+@import "abstracts/mixins";
+@import "abstracts/variable";
+
+@import "base/animation";
+@import "base/typography";
+@import "base/utility";
+
+@import "pages/home";
+
+@import "components/button";
+
+@import "layouts/header";
+
+@import "layouts/grid";
+@import "components/composition";
+
+/*.logo:hover {
+	animation:moveInLeft 1s ease-out;
+}*/
+
+
+/*new main section start here*/
+
+
+.section-about{
+	background-color: #f7f6f7;
+	padding: 25rem 0;
+	margin-top: -20vh;
+
+}
+
+.heading-secondary{
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	display: inline-block;
+	background-image: linear-gradient(to right, #7ed561,#28b483);
+	-webkit-background-clip:text;
+	color: transparent;
+	transition: all .2s;
+	letter-spacing: .2rem;
+}
+.heading-secondary:hover{
+	transform:skewY(5deg) skewX(5deg) scale(1.1);
+	text-shadow: .5rem 1rem 2rem rgba(black,.2);
+}
+
+.u-center-text{
+	text-align: center;
+}
